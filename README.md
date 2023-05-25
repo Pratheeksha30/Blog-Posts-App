@@ -1,5 +1,5 @@
 ## Blog-Posts-App
-# Created using NextJS, ReactJS and MongiDB database.
+# Created using NextJS, ReactJS and MongoDB database.
 
 # Instructions to run app : 
 * Clone the repository
