@@ -1,5 +1,5 @@
 ## Blog-Posts-App
-# Created using NextJS, ReactJS and MongoDB database.
+# Created using NextJS, ReactJS Functional Components and MongoDB database.
 
 # Instructions to run app : 
 * Clone the repository
@@ -15,3 +15,10 @@ Functionalities :
 * Add Blogs
 * Edit and Delete Blogs
 * Logout
+
+# Resources
+
+* NextJS
+* ReactJS
+* MongoDB
+
