@@ -8,7 +8,8 @@ export default function Posts(){
   // react Hooks to store state variables
   const [user, setUser] = useState('');
   const [posts, setPosts] = useState([]);
-
+  
+  // Set the session storage user variable and render blogs of the user once the page is loaded
   useEffect(() =>{
     setUser(sessionStorage.getItem('user'));
     AllPosts();
@@ -20,13 +21,14 @@ export default function Posts(){
     
   }
   
-   const AllPosts = async () => {
+   const AllPosts = async () => {       // fetch api call to get user's blog posts
     await fetch("/api/posts/?user=" + user, {
       method: "GET"
     })
     .then((response) => {
       return response.json();
     })
+     // Map the returned array of objects containing blogs to HTML elements for rendering
     .then((data) => {
       const posts = data.posts;
       setPosts(posts.map(({title,description,likes},idx) =>
