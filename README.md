@@ -9,7 +9,7 @@
 
 Application will run on http://localhost:3000
 
-Functionalities : 
+# Functionalities : 
 * Create User acoount
 * Login to account
 * Add Blogs
