@@ -26,7 +26,7 @@ export default function Signup(){
     let d = new Date();
     var date = d.getDate() + '/' + d.getMonth() + '/' + d.getFullYear();
 
-    await fetch("/api/posts", {    // fetch API call
+    await fetch("/api/posts", {    // fetch API call to POST the new blog details to Backend
       method: "POST",
       body : JSON.stringify({
         author : user,
